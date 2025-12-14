@@ -51,6 +51,7 @@ uv run eda-cli report data/example.csv --out-dir reports
 - `hist_*.png` – гистограммы числовых колонок;
 - `missing_matrix.png` – визуализация пропусков;
 - `correlation_heatmap.png` – тепловая карта корреляций.
+- также добавлена возможность указать title (название для отчета). 
 
 ## Тесты
 - добавлено два новых теста test_too_many_zeroes, test_has_constant_columns
