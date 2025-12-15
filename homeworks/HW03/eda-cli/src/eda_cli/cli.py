@@ -116,6 +116,7 @@ def report(
         f.write(f"- Слишком много колонок: **{quality_flags['too_many_columns']}**\n")
         f.write(f"- Слишком много пропусков: **{quality_flags['too_many_missing']}**\n\n")
         f.write(f"- Слишком много нулей: **{quality_flags['has_many_zero_values']}**\n")
+        f.write(f"- Колонки с постоянными значениями: **{quality_flags['has_constant_values']}**\n")
 
 
         f.write("## Колонки\n\n")
