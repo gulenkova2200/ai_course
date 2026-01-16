@@ -1,0 +1,35 @@
+{
+  "S07-hw-dataset-01": {
+    "best_algo": "dbscan",
+    "selection_criterion": "max_silhouette",
+    "kmeans": {
+      "k": 5
+    },
+    "dbscan": {
+      "eps": 0.78,
+      "min_samples": 6
+    }
+  },
+  "S07-hw-dataset-02": {
+    "best_algo": "kmeans",
+    "selection_criterion": "max_silhouette",
+    "kmeans": {
+      "k": 4
+    },
+    "dbscan": {
+      "eps": 0.5,
+      "min_samples": 10
+    }
+  },
+  "S07-hw-dataset-03": {
+    "best_algo": "kmeans",
+    "selection_criterion": "max_silhouette",
+    "kmeans": {
+      "k": 4
+    },
+    "dbscan": {
+      "eps": 0.3,
+      "min_samples": 10
+    }
+  }
+}
