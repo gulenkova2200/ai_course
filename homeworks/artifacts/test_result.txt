@@ -1,2 +1,0 @@
-Best Model (E4) - Test Accuracy: 0.8428
-Best Model (E4) - Test Loss: 0.4667
