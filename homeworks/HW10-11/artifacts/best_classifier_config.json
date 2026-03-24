@@ -1,0 +1,75 @@
+{
+  "dataset": "CIFAR100",
+  "seed": 42,
+  "fast_mode": true,
+  "model_type": "ResNet18_pretrained",
+  "model_summary": "Pretrained ResNet18 with fine-tuning of layer4 and fc",
+  "num_classes": 100,
+  "pretrained": true,
+  "trainable_layers": [
+    "layer4",
+    "fc"
+  ],
+  "frozen_layers": [
+    "conv1",
+    "bn1",
+    "layer1",
+    "layer2",
+    "layer3"
+  ],
+  "transforms_train": {
+    "name": "train_tf_resnet",
+    "resize_size": 256,
+    "crop_size": 224,
+    "scale": [
+      0.7,
+      1.0
+    ],
+    "horizontal_flip_prob": 0.5,
+    "normalize_mean": [
+      0.5071,
+      0.4867,
+      0.4408
+    ],
+    "normalize_std": [
+      0.2675,
+      0.2565,
+      0.2761
+    ]
+  },
+  "transforms_eval": {
+    "name": "eval_tf_resnet",
+    "resize_size": 256,
+    "crop_size": 224,
+    "normalize_mean": [
+      0.5071,
+      0.4867,
+      0.4408
+    ],
+    "normalize_std": [
+      0.2675,
+      0.2565,
+      0.2761
+    ]
+  },
+  "optimizer": "Adam",
+  "optimizer_params": {
+    "layer4": {
+      "lr": 0.0001,
+      "weight_decay": 0.0001
+    },
+    "fc": {
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    }
+  },
+  "criterion": "CrossEntropyLoss",
+  "epochs_trained": 3,
+  "batch_size": 64,
+  "best_val_accuracy": 0.495,
+  "best_val_loss": 1.7602103958129882,
+  "test_accuracy": null,
+  "test_loss": null,
+  "notes": "ResNet18 with pretrained weights, fine-tuning layer4 and fc on CIFAR100",
+  "date": "2026-03-24 20:28:09"
+}

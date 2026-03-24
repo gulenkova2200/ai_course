@@ -1,0 +1,7 @@
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,best_val_loss,test_accuracy,test_loss,precision,recall,mean_iou,notes
+C1,classification,CIFAR100,42,SimpleCNN (no aug),Adam,0.001,10.0,0.141,3.5433049659729003,,,,,,Simple CNN without augmentations
+C2,classification,CIFAR100,42,SimpleCNN (with aug),Adam,0.001,10.0,0.119,3.6656169090271,,,,,,Simple CNN with augmentations
+C3,classification,CIFAR100,42,ResNet18 (head-only),Adam,0.001,3.0,0.349,2.773102445602417,,,,,,"Pretrained ResNet18, backbone frozen"
+C4,classification,CIFAR100,42,ResNet18 (fine-tune),Adam,"layer4:1e-4, fc:1e-3",3.0,0.495,1.7602103958129882,1.6196345081329346,"Pretrained ResNet18, fine-tuning layer4 and fc",,,,0.549
+S1,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50 (pretrained),,,,,,,,,,0.29583131694153364,"Baseline, threshold 0.5, no postprocessing"
+S2,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50 (pretrained),,,,,,,,,,0.29583131694153364,Postprocessing: remove components < 200 pixels
