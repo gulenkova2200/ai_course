@@ -1,0 +1,11 @@
+query,before_retrieved_sources,after_retrieved_sources,changed
+Что такое острый тонзилит?,"doc_16, doc_12, doc_10","doc_16, doc_22, doc_12",True
+Какие сиптомы у гастрита?,"doc_16, doc_11, doc_14","doc_16, doc_11, doc_14",False
+Что такое аура при мигрени?,"doc_16, doc_02, doc_14","doc_16, doc_02, doc_14",False
+Какие симптомы у цистита?,"doc_02, doc_16, doc_17","doc_02, doc_16, doc_17",False
+Сниженный гемоглобин - это симптом какого заболевания?,"doc_10, doc_16, doc_01","doc_10, doc_16, doc_01",False
+Что такое расширение вен на ногах?,"doc_14, doc_09, doc_16","doc_14, doc_09, doc_16",False
+Какие сиптомы у депрессии?,"doc_15, doc_17","doc_15, doc_17",False
+Что такое псориаз?,"doc_04, doc_15, doc_09","doc_04, doc_15, doc_09",False
+Как лечить корь?,"doc_10, doc_16, doc_19","doc_21, doc_10, doc_16",True
+Почему взрослые сложнее переносят ветрянку?,"doc_17, doc_11, doc_20","doc_17, doc_11, doc_20",False
