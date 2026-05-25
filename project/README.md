@@ -70,7 +70,6 @@ pip install -r requirements.txt
 ---
 
 ### 3.3. Установка окружения(рекомендуется)
-git clone https://github.com/gulenkova2200/ai_course/tree/main/project
 cd project
 uv sync
 
